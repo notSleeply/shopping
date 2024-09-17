@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO优化 -->
+    <!-- 标题 -->
+    <title>树洞</title>
+    <!-- 网站说明 -->
+    <meta name="description" content="这是一个树洞，在这里你可以畅所欲言，释放你的情感，让世界听到你的声音。">
+    <!-- 关键字 -->
+    <meta name=" keywords" content="树洞,情感,释放,声音">
+    <!-- 网页标签 -->
+    <link rel="shortcut icon" href="./favicon.ico" />
+
+    <!-- 外部引入CSS -->
+    <link rel="stylesheet" href="./CSS/treeHole.css">
+</head>
+
+<body>
+
+    <h1>下拉菜单</h1>
+    <nav class="drop-downs">
+        <ul class="navul">
+            <li class="navli">
+                <h4 class="h4">第一个盒子</h4>
+                <ul class="ulson">
+                    <li class="ulsonli">第一个1盒子</li>
+                    <li class="ulsonli">第一个2盒子</li>
+                    <li class="ulsonli">第一个3盒子</li>
+                </ul>
+            </li>
+            <li class="navli">
+                <h4 class="h4">第二个盒子</h4>
+                <ul class="ulson">
+                    <li class="ulsonli">第二个1盒子</li>
+                    <li class="ulsonli">第二个2盒子</li>
+                    <li class="ulsonli">第二个3盒子</li>
+                </ul>
+            </li>
+            <li class="navli">
+                <h4 class="h4">第三个盒子</h4>
+                <ul class="ulson">
+                    <li class="ulsonli">第三个1盒子</li>
+                    <li class="ulsonli">第三个2盒子</li>
+                    <li class="ulsonli">第三个3盒子</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <!-- 分割线 h500px -->
+    <div class="line"></div>
+    <h1>按钮转换背景</h1>
+    <div class="switch">
+        <input type="checkbox" id="switch_input">
+        <label for="switch_input" class="switch_label"></label>
+    </div>
+    <h1>进度条</h1>
+    <div class="progress">
+        <!-- 进度条 -->
+        <div id="fa">
+            <div id="son"></div>
+        </div>
+        <!-- 百分比 -->
+        <div id="nav">
+            <input type="text" id="inp" value="0">
+        </div>
+    </div>
+    <h1>图像拖拽</h1>
+    <div class="drag">
+        <div id="aa" ondragover="dragover(event)" ondrop="drop(event)">
+            <h3>请拖拽到这里</h3>
+        </div>
+        <img id="cc" src="./Upload/IMG_0634.JPG" alt="" draggable="true" ondragstart="drag(event)">
+    </div>
+    <h1>无缝滚动图片轮播</h1>
+    <div class="carousel">
+        <div id="con">
+            <!-- 图片展示 -->
+            <ul class="oUI">
+                <li class="aLi"><img src="./Upload/IMG_0633.JPG" alt=""></li>
+                <li class="aLi"><img src="./Upload/IMG_0634.JPG" alt=""></li>
+                <li class="aLi"><img src="./Upload/IMG_0635.JPG" alt=""></li>
+                <li class="aLi"><img src="./Upload/IMG_0636.JPG" alt=""></li>
+                <li class="aLi"><img src="./Upload/IMG_0637.JPG" alt=""></li>
+            </ul>
+            <!-- 按钮 -->
+            <div id="bu">
+                <button class="bu"> 向左走 </button>
+                <button class="bu"> 向右走 </button>
+            </div>
+        </div>
+    </div>
+    <!-- 分割线 h500px -->
+    <div class="line"></div>
+    <!-- 外部引入JS -->
+    <script src="./JS/treeHole.JS" defer></script>
+</body>
+
+</html>

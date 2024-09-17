@@ -1,0 +1,285 @@
+.main {
+    width: 980px;
+    height: 465px;
+    margin-left: 220px;
+    margin-top: 10px;
+    /* background-color: pink; */
+}
+
+.Focus {
+    float: left;
+    height: 455px;
+    width: 721px;
+    background-color: aqua;
+}
+
+.Focus img {
+    width: 721px;
+    height: 455px;
+}
+
+.Newflash {
+    float: right;
+    height: 455px;
+    width: 250px;
+    /* background-color: brown; */
+
+}
+
+.news {
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+
+.new_hd {
+    height: 33px;
+    border-bottom: 1px dashed #e4e4e4;
+    padding-left: 15px;
+    line-height: 33px;
+}
+
+.new_hd h5 {
+    float: left;
+    font-size: 16px;
+    cursor: default;
+}
+
+.more {
+    float: right;
+    margin-right: 15px;
+}
+
+.more::after {
+    content: '\e904';
+    font-family: 'icomoon';
+}
+
+.new_bd {
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+.new_bd ul li {
+    height: 24px;
+    line-height: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.new_bd ul li strong {
+    margin-right: 4px;
+}
+
+.lifeservice {
+    height: 209px;
+    overflow: hidden;
+    border-bottom: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+    border-left: 1px solid #e4e4e4;
+    /* background-color: aqua; */
+}
+
+.lifeservice ul {
+    width: 252px;
+}
+
+.lifeservice ul li {
+    float: left;
+    width: 63px;
+    height: 71px;
+    border-bottom: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+    text-align: center;
+}
+
+.lifeservice ul li i {
+    width: 24px;
+    height: 28px;
+    margin-top: 12px;
+    display: inline-block;
+    background: url(../Images/icons.png);
+    background-position: -19px -16px;
+}
+
+.lifeservice ul li p {
+    cursor: pointer;
+}
+
+.bargain {
+    margin-top: 10px;
+}
+
+.recommend {
+    margin-top: 11px;
+    height: 163px;
+}
+
+.recom_hd {
+    float: left;
+    position: relative;
+    width: 205px;
+    height: 100%;
+    background-color: #5c5251;
+}
+
+.recom_hd a img {
+    position: absolute;
+    top: 34px;
+    left: 62px;
+}
+
+.recom_dd {
+    float: left;
+    height: 100%;
+    /* width: 995px; */
+    background-color: #ebebeb;
+}
+
+.recom_dd ul li {
+    position: relative;
+    float: left;
+}
+
+/* 无论放什么图片宽高都固定 */
+.recom_dd ul li img {
+    width: 248px;
+    height: 163px;
+    transition: all .5s;
+}
+
+.recom_dd ul li img:hover {
+    box-shadow: 5px 5px 10px 10px #5e5e5e;
+    padding-bottom: 0.7px;
+}
+
+/* 商品后面的小隔离条 */
+.recom_dd ul li:nth-child(-n+3):after {
+    content: ' ';
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 1px;
+    height: 145px;
+    background-color: #dddddd;
+}
+
+.box_hd {
+    margin-top: 30px;
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+
+.box_hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+    cursor: default;
+}
+
+.title_list {
+    float: right;
+}
+
+.title_list ul li {
+    float: left;
+    display: block;
+}
+
+
+.title_list ul li:hover {
+    border-bottom: 2px solid #c81623;
+}
+
+.title_list ul li:nth-child(even) {
+    margin-top: 2px;
+    margin-left: 9px;
+    margin-right: 9px;
+    width: 1px;
+    height: 14px;
+    background-color: #666666;
+}
+
+.box_bd {
+    height: 360px;
+}
+
+/* 电商图片动态展示 */
+.box_bd a img {
+    transition: all .5s;
+}
+
+.box_bd a img:hover {
+    padding-left: 20px;
+}
+
+.box_bd .col_1 {
+    height: 360px;
+    width: 210px;
+    background-color: #f9f9f9;
+}
+
+.box_bd .col_1 ul li {
+    float: left;
+    margin-left: 25px;
+    margin-top: 15px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.box_bd>div {
+    float: left;
+    overflow: hidden;
+}
+
+.box_bd .col_2 {
+    width: 329px;
+    height: 360px;
+}
+
+.box_bd .col_3 {
+    width: 219px;
+    height: 360px;
+    border-right: 1px solid #ccc;
+}
+
+
+.col_3_top {
+    width: 219px;
+    height: 180px;
+}
+
+/* 底边框 */
+.bb {
+    height: 179px;
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+
+.col_3_bottom {
+    width: 219px;
+    height: 180px;
+}
+
+.col_4 {
+    width: 220px;
+    height: 360px;
+    border-right: 1px solid #ccc;
+}
+
+.col_5 {
+    height: 360px;
+    width: 220px;
+}
+
+.col_5_top {
+    width: 219px;
+    height: 180px;
+}
+
+.col_5_bottom {
+    width: 219px;
+    height: 180px;
+}

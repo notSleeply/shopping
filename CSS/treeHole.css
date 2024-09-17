@@ -1,0 +1,259 @@
+/* -------------初始化--------------- */
+/* 清除整页边距 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 使所有盒子成为CSS3盒子 */
+* {
+  box-sizing: border-box;
+}
+
+/* 去除li中的小点 */
+ul {
+  list-style: none;
+}
+
+/* 自定义div，用来分割盒子 */
+.line {
+  height: 500px;
+}
+
+/* ----------------下拉菜单------------------ */
+.drop-downs {
+  border-radius: 10px;
+  width: 450px;
+  height: 50px;
+  background-color: black;
+  color: #09dbd4;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.navul {
+  width: 100%;
+}
+
+.navli {
+  /* ul左浮 使li水平 */
+  float: left;
+  width: 150px;
+  text-align: center;
+}
+
+/* 同时控制两个选择器 */
+.ulsonli,
+.h4:hover {
+  /* 小手 */
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.ulson {
+  /* 先隐藏掉下来菜单盒子 */
+  display: none;
+  background-color: black;
+  border-radius: 5px;
+}
+
+/* 去掉第一个选择器 */
+.ulsonli:not(:first-child) {
+  border-top: 1px dashed #ccc;
+}
+
+/* ----------------按钮转换背景------------------ */
+body {
+  /* 设置CSS变量 --变量名 */
+  --colors: #fff;
+  /* 调用变量 */
+  background-color: var(--colors);
+}
+
+/* 等待添加的属性 */
+.dark {
+  --colors: #fe4040;
+}
+
+.switch {
+  width: 200px;
+}
+
+/* 将复选框的按钮隐藏起来，通过类似按钮的盒子控制this-->按钮 */
+#switch_input {
+  display: none;
+}
+
+.switch_label {
+  display: block;
+  width: 100px;
+  height: 50px;
+  border: 2px solid #ccc;
+  border-radius: 50px;
+  padding: 12px;
+  /* 恢复原始盒子，清楚CSS3盒子 */
+  box-sizing: content-box;
+}
+
+.switch_label::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 100%;
+  background-color: blue;
+  border-radius: 50%;
+  transform: translateX(0);
+  border-radius: 50%;
+  transition: all 0.3s;
+  /* 通过相对移动 */
+  position: relative;
+  left: 0%;
+}
+
+/* 点击后，小圆钮移动 */
+#switch_input:checked+.switch_label::after {
+  left: 50%;
+}
+
+
+/* ----------------进度条------------------ */
+
+.progress {
+  width: 100%;
+  height: 300px;
+  background-color: #000;
+  /* grid网格布局 二维 */
+  display: grid;
+  /* 层 */
+  grid-template-rows: 35px 130px;
+  /* 宽 */
+  grid-template-columns: 350px;
+  /* 将两个区域命名 */
+  grid-template-areas: 'div1' 'div2';
+  /* 居中对齐 */
+  justify-content: center;
+  align-content: center;
+}
+
+/* 进度条 */
+#fa {
+  /* 到一个区域里 */
+  grid-area: div1;
+  width: 350px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #fff;
+}
+
+#son {
+  height: 100%;
+  border-radius: 10px;
+  /* 渐变色 */
+  background: linear-gradient(to right, #30cfd0, #330867);
+  box-shadow: 0 0 10px #fff;
+  /* 调用动画 */
+  animation: identifier 5s infinite;
+}
+
+/* 动画 */
+@keyframes identifier {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+/* 百分比 */
+#nav {
+  grid-area: div2;
+  /* 在grid盒子中，自身在div2区域对齐 */
+  justify-self: center;
+  align-self: center;
+}
+
+#inp {
+  width: 50px;
+  height: 35px;
+  border: 2px solid #fff;
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #fff;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+/* ----------------图像拖拽------------------ */
+
+#aa {
+  width: 500px;
+  height: 500px;
+  border: 2px solid black;
+}
+
+#cc {
+  width: 200px;
+  height: 200px;
+}
+
+/* ----------------无缝滚动图片轮播------------------ */
+
+
+
+/* 使内容在窗口中间显示 */
+.carousel {
+  width: 100%;
+  height: 500px;
+  /* 子盒子居中 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+#con {
+  position: relative;
+  width: 1100px;
+  height: 300px;
+  /* 溢出 */
+  Overflow: hidden;
+}
+
+.oUI {
+  position: absolute;
+  width: 1100px;
+  height: 200px;
+}
+
+.aLi {
+  width: 200px;
+  float: left;
+  margin-right: 20px;
+}
+
+/* 固定图片大小 */
+.aLi img {
+  width: 200px;
+  height: 200px;
+}
+
+/* 按钮部分 */
+#bu {
+  position: absolute;
+  width: 400px;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%, 0);
+}
+
+.bu {
+  height: 35px;
+  width: 80px;
+  margin: 0 50px;
+}
